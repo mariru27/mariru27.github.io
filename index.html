@@ -1,29 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to Our Watercolor Art Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            text-align: center;
-            padding: 50px;
-        }
-
-        h1 {
-            font-size: 36px;
-            color: #3498db;
-            margin-bottom: 20px; /* Add margin to create an empty line after h1 */
-        }
-
-        p {
-            font-size: 20px;
-            color: #333;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquachord - Art & Creativity</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to Our Watercolor Art Page</h1>
-    <p>Discover a world of artistry. Explore watercolor books and exquisite art supplies that fuel your creative passion.</p>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Aquachord</h1>
+            <nav class="nav">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Where Art Meets Inspiration</h2>
+                <p class="hero-subtitle">Coming Soon: Your Ultimate Art Destination</p>
+                <div class="countdown" id="countdown"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">What We Offer</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Art Marketplace</h3>
+                    <p>Discover and purchase unique artworks from emerging artists worldwide.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🖌️</div>
+                    <h3>Painting Tutorials</h3>
+                    <p>Step-by-step guides for all skill levels, from beginners to professionals.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛍️</div>
+                    <h3>Art Supplies Shop</h3>
+                    <p>Premium quality paints, brushes, and art materials for professional artists.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2 class="section-title">Custom Art Commissions</h2>
+            <p class="cta-text">Want a custom painting? Contact us to discuss your ideas!</p>
+            <div class="email-contact">
+                <a href="mailto:aquachord.art@gmail.com" class="email-link">aquachord.art@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2023 Aquachord. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="ts/script.js"></script>
 </body>
 </html>

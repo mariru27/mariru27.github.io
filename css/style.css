@@ -1,0 +1,160 @@
+:root {
+    --primary-color: #2a9d8f;
+    --secondary-color: #264653;
+    --accent-color: #e9c46a;
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background: var(--secondary-color);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 2rem;
+    float: left;
+}
+
+.nav {
+    float: right;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+}
+
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.features {
+    padding: 5rem 0;
+    background: var(--light-bg);
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cta {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.email-contact {
+    margin-top: 2rem;
+}
+
+.email-link {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-bottom: 2px solid var(--accent-color);
+    transition: color 0.3s;
+    padding: 0.5rem 1rem;
+}
+
+.email-link:hover {
+    color: var(--secondary-color);
+}
+
+.footer {
+    background: var(--secondary-color);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .logo, .nav {
+        float: none;
+        text-align: center;
+    }
+    
+    .nav {
+        margin-top: 1rem;
+    }
+    
+    .nav-link {
+        margin: 0 1rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
